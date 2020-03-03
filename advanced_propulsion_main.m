@@ -49,7 +49,7 @@ Ab_A1 = Ab_A2*A2_A1; % Area ratio - end of burner to inlet
 T0b_Tb = 1/Tb_T0b; P0b_Pb = 1/Pb_P0b; AC2_Ab = 1/Ab_AC2;
 AC2_A1 = AC2_Ab*Ab_A1; % C2 is the nozzle throat
 
-% Exhaust
+% Exhaust (4)
 P04_P4 = P0b_Pb*P2_P02*P0y_Py*Py_Px*Px_P0x*P01_P1;
 P4_P04 = 1/P04_P4;
 [M4,T4_T04,~,A4_AC2] = isentropic_flow(gamma,P4_P04,'P_ratio'); % Reverse isentropic flow table to find M4 
