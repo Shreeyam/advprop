@@ -79,16 +79,16 @@ eta_th = 1 - (T4 - Tinf)/(Tb - T2);
 
 % Propulsive efficiency 
 eta_prop = (F/(Pinf*A1))*(2*R*Tinf/(U4^2 - U1^2));
-
-% Display outputs
-disp(['Inlet area [m^2]: ' num2str(A1)]);
-disp(['Inlet  throat area [m^2]: ' num2str(AC1)]);
-disp(['Burner entry area [m^2]: ' num2str(A2)]);
-disp(['Burner exit area [m^2]: ' num2str(Ab)]);
-disp(['Nozzle throat area [m^2]: ' num2str(AC2)]);
-disp(['Exhaust area [m^2]: ' num2str(A4)]);
-disp(['Thermodynamic efficiency: ' num2str(eta_th*100) '%']);
-disp(['Propulsive efficiency: ' num2str(eta_prop*100) '%']);
+ 
+% % Display outputs
+% disp(['Inlet area [m^2]: ' num2str(A1)]);
+% disp(['Inlet  throat area [m^2]: ' num2str(AC1)]);
+% disp(['Burner entry area [m^2]: ' num2str(A2)]);
+% disp(['Burner exit area [m^2]: ' num2str(Ab)]);
+% disp(['Nozzle throat area [m^2]: ' num2str(AC2)]);
+% disp(['Exhaust area [m^2]: ' num2str(A4)]);
+% disp(['Thermodynamic efficiency: ' num2str(eta_th*100) '%']);
+% disp(['Propulsive efficiency: ' num2str(eta_prop*100) '%']);
 
 end
 
