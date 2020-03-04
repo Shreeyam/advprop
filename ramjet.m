@@ -1,7 +1,6 @@
 % Advanced propulsion coursework AERO96016
 % Ramjet generator
 % Written by Arhant Sethia and Shreeyam Kacker 03/03/2020
-% TODO: Remove isentropic_flow function
 
 % INPUTS:
 % Free stream temperature
