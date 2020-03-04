@@ -11,7 +11,7 @@ close all;
 
 % Load default values
 defaults;
-Pinf = linspace(0, 100e5);
+Pinf = linspace(0, 100);
 
 nth = zeros(1, length(Pinf));
 nprop = zeros(1, length(Pinf));
@@ -27,8 +27,8 @@ end
 f = figure;
 hold on;
 
-plot(Pinf/1e3, nth);
-plot(Pinf/1e3, nprop);
+plot(Pinf, nth);
+plot(Pinf, nprop);
 
 ylim([0, 1]);
 
