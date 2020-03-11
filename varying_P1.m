@@ -11,15 +11,15 @@ close all;
 
 % Load default values
 defaults;
-Tinf = linspace(0, 1000, 1000);
+P1 = linspace(0, 100);
 
-nth = zeros(1, length(Tinf));
-nprop = zeros(1, length(Tinf));
+nth = zeros(1, length(P1));
+nprop = zeros(1, length(P1));
 
 %% Run
 
-for i = 1:length(Tinf)
-    [~,~,~,~,~,~,nth(i),nprop(i)] = ramjet(Tinf(i), Pinf, Minf, Mx, M2, Tb, F);
+for i = 1:length(P1)
+    [~,~,~,~,~,~,nth(i),nprop(i)] = ramjet(T1, P1(i), M1, Mx, M2, Tb, F);
 end
 
 %% Plots
@@ -27,13 +27,13 @@ end
 f = figure;
 hold on;
 
-plot(Tinf, nth);
-plot(Tinf, nprop);
-plot(Tinf, nth .* nprop, 'k--');
+plot(P1, nth);
+plot(P1, nprop);
+plot(P1, nth .* nprop, 'k--');
 
-ylim([0, 1.4]);
+ylim([0, 1]);
 
-xlabel('T_{\infty} [K]')
+xlabel('P_{\infty} [kPa]')
 ylabel('\eta [-]');
 
 legend('\eta_{thermal}', '\eta_{prop}', '\eta_0');
